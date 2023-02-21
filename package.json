@@ -1,6 +1,6 @@
 {
   "name": "wordpress-posts-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React hooks and components to asynchronously fetch and display WordPress posts using its most updated API",
   "main": "dist/index",
   "scripts": {
@@ -14,8 +14,8 @@
   "author": "onlyphantom <samuel.c@outlook.com> (https: //github.com/onlyphantom)",
   "license": "MIT",
   "peerDependencies": {
-    "react": ">=16.8.0<19.0.0",
-    "react-dom": ">=16.8.0<19.0.0"
+    "react": ">=16.8.0 <19.0.0",
+    "react-dom": ">=16.8.0 <19.0.0"
   },
   "files": [
     "dist"
