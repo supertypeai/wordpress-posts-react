@@ -25,5 +25,5 @@ jobs:
     - name: Build
       run: |
         yarn install
-        yarn add grunt grunt-cli
+        yarn add --dev grunt grunt-cli grunt-contrib-uglify
         grunt
