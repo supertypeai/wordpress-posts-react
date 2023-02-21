@@ -1,8 +1,8 @@
-[![Supertype](https://img.shields.io/badge/supertype.ai-incubate-b1976b)](https://supertype.ai)
+[![Supertype](https://img.shields.io/badge/supertype.ai-incubate-b1976b)](https://supertype.ai)  &nbsp; &nbsp; ![wordpress-posts-react](https://img.shields.io/bundlephobia/min/wordpress-posts-react) &nbsp; &nbsp; ![npm](https://img.shields.io/npm/v/wordpress-posts-react) &nbsp; &nbsp; ![github | wordpress-posts-react](https://img.shields.io/github/package-json/v/supertypeai/wordpress-posts-react)
 
 ## WordPress-Posts-React
 
-A lightweight (<10 kb!) set of React hooks and components to asynchronously fetch and display WordPress posts using WordPress's most updated [REST API](https://developer.wordpress.org/rest-api/). 
+A lightweight (<3 kb minified!) set of React hooks and components to asynchronously fetch and display WordPress posts using WordPress's most updated [REST API](https://developer.wordpress.org/rest-api/). 
 
 ### Why? 
 Almost all of the other WordPress React libraries I found were either too bloated or too old and unmaintained, which uses outdated mechanisms to retrieve blog articles off WordPress sites. This library is designed to be as lightweight as possible (no dependencies), and provides drop-in components to display posts in a variety of ways directly in your React app.
@@ -53,7 +53,8 @@ It uses WordPress' [officially documented](https://developer.wordpress.org/rest-
 - 📦 No dependencies (Less than 10kb in size)
 
 
-![](assets/wordpress-blog-feed.png)
+<img src="https://github.com/supertypeai/wordpress-posts-react/raw/main/assets/wordpress-blog-feed.png" 
+    width="50%" align="left" style="margin-right:10%" />
 
 ### Hooks and Components
 
@@ -102,3 +103,5 @@ yarn start
 # or
 npm run start
 ```
+
+Please feel free to open an issue or submit a pull request if you have any questions or suggestions! 
