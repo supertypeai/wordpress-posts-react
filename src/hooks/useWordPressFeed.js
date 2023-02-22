@@ -34,6 +34,7 @@ export default function useWordPressFeed(
                 .then((posts) => {
                     return posts.map((post) => {
                         return {
+                            id: post.id,
                             title: decodeHtml(post.title.rendered),
                             // processed link: https:\/\/supertype.ai\/p\/samuel\/ -> https://supertype.ai/p/samuel/
                             link: parseUrlString(post.link),
@@ -49,7 +50,7 @@ export default function useWordPressFeed(
                     setLoading(false);
                 })
                 .catch((error) => {
-                    alert(
+                    console.log(
                         "Your posts could not be fetched from the specified address.\nError: " +
                         error.message
                     );
