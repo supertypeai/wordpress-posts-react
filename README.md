@@ -88,6 +88,40 @@ const { feed, loading } = useWordPressFeed('https://supertype.ai')
 }
 ```
 
+There are also a few utility functions that you can use to format dates, parse HTML and decode HTML entities. You are not required to directly use them in your React project, as they are used internally by `wordpress-posts-react` to format the posts. However, they are exported so you _can use them_ elsewhere in your own React application or roll your own blog components (e.g `<YourOwnCustomBlogRoll />`) after cleaning the returned json data using these utility functions.
+
+```js
+import { useWordPressFeed, timeAgo, 
+         parseUrlString, decodeHtml } 
+from 'wordpress-posts-react'
+
+const BlogComponent = ({url}) => {
+    const { wp_data, loading } = useWordPressFeed(url)
+    const [feed, setFeed] = useState([]);
+
+    useEffect(() => {
+        if(wp_data && !loading){
+            const posts = wp_data.map((post) => {
+                const { title, link, date, excerpt } = post;
+                    return {
+                        id: post.id,
+                        title: decodeHtml(title.rendered),
+                        link: parseUrlString(link),
+                        date: timeAgo(date),
+                        excerpt: decodeHtml(excerpt.rendered),
+                        // ...other custom attributes post-cleansing
+                    };
+                });
+            setFeed(posts);
+        }
+    }, [url]);
+
+    return <YourOwnCustomBlogRoll feed={feed} />
+    
+}
+```
+
+
 ### Development 
 This package uses Rollup to bundle the library. To build it, run with either:
 

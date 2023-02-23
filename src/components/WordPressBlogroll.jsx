@@ -1,5 +1,3 @@
-import React from "react";
-
 const WordPressBlogroll = ({ feed }) => {
   return feed.map((post) => (
     <div style={{ marginBottom: "2rem" }} key={post.id}>
