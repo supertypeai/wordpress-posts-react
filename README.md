@@ -1,4 +1,4 @@
-[![Supertype](https://img.shields.io/badge/supertype.ai-incubate-b1976b)](https://supertype.ai)  &nbsp; &nbsp; ![wordpress-posts-react](https://img.shields.io/bundlephobia/min/wordpress-posts-react) &nbsp; &nbsp; ![npm](https://img.shields.io/npm/v/wordpress-posts-react) &nbsp; &nbsp; ![github | wordpress-posts-react](https://img.shields.io/github/package-json/v/supertypeai/wordpress-posts-react) &nbsp; &nbsp; ![license](https://img.shields.io/npm/l/wordpress-posts-react) 
+[![Supertype](https://img.shields.io/badge/supertype.ai-incubate-b1976b)](https://supertype.ai/incubate)  &nbsp; &nbsp; ![wordpress-posts-react](https://img.shields.io/bundlephobia/min/wordpress-posts-react) &nbsp; &nbsp; ![npm](https://img.shields.io/npm/v/wordpress-posts-react) &nbsp; &nbsp; ![github | wordpress-posts-react](https://img.shields.io/github/package-json/v/supertypeai/wordpress-posts-react) &nbsp; &nbsp; ![license](https://img.shields.io/npm/l/wordpress-posts-react) 
 
 ## WordPress-Posts-React
 
